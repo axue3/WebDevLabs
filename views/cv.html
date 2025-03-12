@@ -8,39 +8,53 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Andrew Xue</title>
+    <link rel="stylesheet" href="../static/style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
 </head>
-<body style="font-family: Arial">
+<body>
     <header>
-        <h1>
+        
+        <h1 id="webname">
             Andrew Xue
         </h1>
-        <nav>
-            <li><a href="../index.html">Home</a></li>
-            <li><a href="cv.html">CV</a></li>
-            <li><a href="contactme.html">Contact Me</a></li>
-            <li><a href="forfun.html">For Fun</a></li>
+        <nav class="nav-links">
+            <a href="../index.html">Home</a>
+            <a href="cv.html">CV</a>
+            <a href="contactme.html">Contact Me</a>
+            <a href="forfun.html">For Fun</a>
         </nav>
 
     </header>
     <div class="main">
         <h2>Curriculum Vitae</h2>
 
-        <div style="display: flex; font-weight: bold;">
-            <div style="width: 30%;">Name</div>
-            <div style="width: 70%;">Description</div>
-        </div>
-
-        <div style="display: flex;">
-            <div style="width: 30%;">Palo Alto High School</div>
-            <div style="width: 70%;">Graduated a while back.</div>
-        </div>
-
-        <div style="display: flex;">
-            <div style="width: 30%;">Carnegie Mellon University</div>
-            <div style="width: 70%;">Coursework: Object Oriented Programming, Data Structures, Algorithms, Probability, Linguistics, Vector
-                Calculus, Linear Algebra, Computer Systems, Functional Programming, Machine Learning, Human-centered
-                Design, Database Design</div>
-        </div>
+        <table class="cv-table">
+            <thead>
+                <tr>
+                    <th>Name</th>
+                    <th>Description</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Palo Alto High School</td>
+                    <td>Graduated a while back.</td>
+                </tr>
+                <tr>
+                    <td>Carnegie Mellon University</td>
+                    <td>Coursework: Object Oriented Programming, Data Structures, Algorithms, Probability, Linguistics, Vector Calculus, Linear Algebra, Computer Systems, Functional Programming, Machine Learning, Human-centered Design, Database Design</td>
+                </tr>
+                <tr>
+                    <td>I need an internship this summer</td>
+                    <td>Please I need an internship this summer.</td>
+                </tr>
+                <tr>
+                    <td>Research Assistant</td>
+                    <td>Constructed a handheld, non-invasive vibrotactile device utilizing Arduino and firmware software to deliver
+                        precise vibrations across a wide range of frequencies</td>
+                </tr>
+            </tbody>
+        </table>
         <p>
             <a href="../static/xue-andrew-resume-2425.docx.pdf" target="_blank">Resume(PDF)</a>
         </p>
