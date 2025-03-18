@@ -10,9 +10,11 @@
     <title>Andrew Xue</title>
     <link rel="stylesheet" href="./static/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
+
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
     <script defer src="./static/script.js" ></script>
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">
             Andrew Xue
@@ -33,8 +35,19 @@
         <p id="intro">Welcome to my website! I'm a student at Carnegie Mellon<br> University studying Information Systems and Computer Science.
         I love going outdoors and traveling.</p>
     </div>
+    
+    <div id="bioSection">
+        <p id="shortBio">I'm a student passionate about technology and outdoor adventures.</p>
+        <p id="fullBio">
+            I'm currently pursuing my degree at Carnegie Mellon University, studying Information Systems and Computer Science.
+            My interests include technology, traveling, and outdoor activities like hiking and biking.
+            I believe in the power of technology to solve real-world problems, especially in the context of sustainable practices.
+        </p>
+        <button id="readMoreBtn">Read More</button>
+        <button id="readLessBtn">Read Less</button>
+    </div>
     <footer>
-        © 2025 Andrew Xue. All rights reserved.
+        <p id="copyYear">© Andrew Xue. All rights reserved.</p>
     </footer>
     
 </body>

@@ -56,3 +56,41 @@ form {
 .contact-table tbody tr:nth-child(odd) {
     background-color: #f2f2f2;
 }
+/* General styling for the bio section */
+#bioSection {
+    margin-top: 20px;
+}
+
+/* Styling for the short bio text */
+#shortBio {
+    font-size: 16px;
+    line-height: 1.6;
+}
+
+/* Styling for the full bio text */
+#fullBio {
+    display: none;
+    font-size: 16px;
+    line-height: 1.6;
+    margin-top: 10px;
+}
+
+/* Button styles */
+button {
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+    margin-top: 10px;
+}
+#readLessBtn {
+    display: none;
+}
+
+#funList {
+    display: none;
+}

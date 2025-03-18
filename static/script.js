@@ -30,32 +30,32 @@ if (C.length > z) {
 let L1 = ["Watermelon", "Pineapple", "Pear", "Banana"];
 let L2 = ["Apple", "Banana", "Kiwi", "Orange"];
 
-function findTheBanana(arr) {
-    for (let i = 0; i < arr.length; i++) {
-        if (arr[i] === "Banana") { 
-            alert("Found the Banana at index " + i);
-            return;
-        }
-    }
-    alert("Didn't find Banana");
-}
+// function findTheBanana(arr) {
+//     for (let i = 0; i < arr.length; i++) {
+//         if (arr[i] === "Banana") { 
+//             alert("Found the Banana at index " + i);
+//             return;
+//         }
+//     }
+//     alert("Didn't find Banana");
+// }
 
-findTheBanana(L1);
-findTheBanana(L2);
-
-
+// findTheBanana(L1);
+// findTheBanana(L2);
 
 
-function findTheBananaForEach(array) {
-    array.forEach(function(currentValue, index, arr) {
-        if (currentValue === "Banana") {
-            alert("We found a banana in the first array");
-        }
-    });
-}
 
-findTheBananaForEach(L1);
-findTheBananaForEach(L2);
+
+// function findTheBananaForEach(array) {
+//     array.forEach(function(currentValue, index, arr) {
+//         if (currentValue === "Banana") {
+//             alert("We found a banana in the first array");
+//         }
+//     });
+// }
+
+// findTheBananaForEach(L1);
+// findTheBananaForEach(L2);
 
 
 function greetingFunc() {
@@ -78,3 +78,65 @@ function greetingFunc() {
 
 
 greetingFunc();
+
+function addYear(){
+    let d = new Date();
+    let y = d.getFullYear();
+    let Y = document.getElementById("copyYear");
+    Y.innerHTML = `© ${y} Andrew Xue. All rights reserved.`;
+}
+
+function showList() {
+    document.getElementById("funList").style.display = "block";
+    document.getElementById("showButton").style.display = "none";
+}
+
+$(document).ready(function() {
+    $("#readMoreBtn").click(function() {
+      $("#fullBio").show();
+      $("#readMoreBtn").hide();
+      $("#readLessBtn").show();
+    });
+  
+    $("#readLessBtn").click(function() {
+      $("#fullBio").hide();
+      $("#readMoreBtn").show();
+      $("#readLessBtn").hide();
+    });
+  });
+
+
+function validateForm(event) {
+    event.preventDefault();
+
+    const nameInput = document.getElementById("name");
+    const emailInput = document.getElementById("email");
+    const commentInput = document.getElementById("comment");
+    const errorContainer = document.getElementById("errorMessages");
+
+
+    errorContainer.innerHTML = "";
+
+    let errors = [];
+
+    if (!nameInput.checkValidity()) {
+        errors.push("Please enter your name.");
+    }
+
+
+    if (!emailInput.checkValidity()) {
+        errors.push("Please enter a valid email address.");
+    }
+
+
+    if (!commentInput.checkValidity()) {
+        errors.push("Please enter your comment.");
+    }
+
+
+    if (errors.length > 0) {
+        errorContainer.innerHTML = errors.join("<br>")
+    }else {
+        document.getElementById("contactForm").submit();
+    }
+}

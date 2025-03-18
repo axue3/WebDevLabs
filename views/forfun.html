@@ -12,7 +12,7 @@
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
     <script defer src="../static/script.js" ></script>
 </head>
-<body>
+<body onload="addYear()">
     <header>
         <h1 id="webname">
             Andrew Xue
@@ -27,7 +27,9 @@
     </header>
     <div class="main">
         <h2>Things I love to do for fun</h2>
-        <ul>
+
+        <button id="showButton" onclick="showList()">Click to see...</button>
+        <ul id="funList">
             <li>Traveling</li>
             <li>Sleeping</li>
             <li>Backpacking</li>
@@ -36,7 +38,7 @@
         </ul>
     </div>
     <footer>
-        © 2025 Andrew Xue. All rights reserved.
+        <p id="copyYear">©Andrew Xue. All rights reserved.</p>
     </footer>
     
 </body>
