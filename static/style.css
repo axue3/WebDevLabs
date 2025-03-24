@@ -91,6 +91,50 @@ button {
     display: none;
 }
 
-#funList {
+/* #funList {
     display: none;
+} */
+
+.item2 {
+    border-radius: 100%;
+  }
+
+
+.container{
+    border-radius: 100%;
+    display: inline-block;
+    border-radius: 10%;
+    box-shadow: 5px 10px;
 }
+
+  
+
+/* Style the button similar to your contact form */
+.container button {
+background-color: #007BFF;
+color: #fff;
+border: none;
+padding: 10px 20px;
+font-size: 16px;
+border-radius: 5px;
+cursor: pointer;
+}
+
+
+.map-iframe {
+    width: 100%;
+    max-width: 600px;
+    height: 450px;
+    border: 2px solid #ccc;
+    border-radius: 8px;
+  }
+
+
+/* The main flex container */
+.mainLayout > div {
+    flex: 1 1 200px; 
+    min-width: 200px;
+    border-radius: 8px;
+    text-align: center;
+    padding: 10px;
+  }

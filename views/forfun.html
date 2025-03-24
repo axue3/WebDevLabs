@@ -25,8 +25,8 @@
         </nav>
 
     </header>
-    <div class="main">
-        <h2>Things I love to do for fun</h2>
+    <div class="mainLayout">
+        <!-- <h2>Things I love to do for fun</h2>
 
         <button id="showButton" onclick="showList()">Click to see...</button>
         <ul id="funList">
@@ -35,11 +35,38 @@
             <li>Backpacking</li>
             <li>Eating</li>
             <li>Basketball</li>
-        </ul>
+        </ul> -->
+        <div class="item1">
+            <h2>Things I love to do for fun</h2>
+
+            <!-- <button id="showButton" onclick="showList()">Click to see...</button> -->
+            <ul id="funList">
+                <li>Traveling</li>
+                <li>Sleeping</li>
+                <li>Backpacking</li>
+                <li>Eating</li>
+                <li>Basketball</li>
+            </ul>
+        </div>
+        <div class="item2">
+            <img src="../static/rock.JPG" alt="A picture in San Diego" width="300">
+        </div>
+        <div class="item3">
+            <iframe width="420" height="315"
+            src="https://www.youtube.com/embed/oPmhE_EmLjk?si=5fl3nJPCRJhgFX7w">
+            </iframe>
+        </div>
+        <div class="item4">
+            <div class="container">
+                <h2>Need Some Advice?</h2>
+                <p id="adviceText">Click the button to get a random piece of advice!</p>
+                <button onclick="getAdvice()">Get Advice</button>
+              </div>
+        </div>
     </div>
     <footer>
         <p id="copyYear">©Andrew Xue. All rights reserved.</p>
     </footer>
-    
+    <script src="../static/fun.js"></script>
 </body>
 </html>

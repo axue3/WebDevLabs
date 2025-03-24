@@ -10,7 +10,7 @@
     <title>Andrew Xue</title>
     <link rel="stylesheet" href="../static/style.css">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Roboto:wght@100&display=swap">
-    <script defer src="../static/script.js" ></script>
+    <!-- <script defer src="../static/script.js" ></script> -->
 </head>
 <body onload="addYear()">
     <header>
@@ -26,34 +26,32 @@
         
 
     </header>
-    <div class="main">
-        <h2>Contact Me</h2>
-        <!-- <form action="#" method="post">
-            <label for="name">Your name (required)</label>
-            <input type="text" id="name" name="name" required>
-    
-            <label for="email">Your email</label>
-            <input type="email" id="email" name="email" required>
-    
-            <label for="comment">Your comment</label>
-            <textarea id="comment" name="comment" required></textarea>
-    
-            <input type="submit" value="SEND">
-        </form> -->
-        <form id="contactForm" action="#" method="post" onsubmit="validateForm(event)">
-            <label for="name">Your name (required)</label>
-            <input type="text" id="name" name="name" required>
+    <div class="mainLayout">
+        <div class="item1">
+            <h2>Find Me</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d58057.236439827386!2d-81.81506769124424!3d24.569266010037257!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x88d1b134ad952377%3A0x3fcee92f77463b5e!2sKey%20West%2C%20FL%2033040!5e0!3m2!1sen!2sus!4v1742766963726!5m2!1sen!2sus"
+            width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="item2">
+            <h2>Contact Me</h2>
+            <form id="contactForm" action="#" method="post" onsubmit="validateForm(event)">
+                <label for="name">Your name (required)</label>
+                <input type="text" id="name" name="name" required>
 
-            <label for="email">Your email (required)</label>
-            <input type="email" id="email" name="email" required>
+                <label for="email">Your email (required)</label>
+                <input type="email" id="email" name="email" required>
 
-            <label for="comment">Your comment (required)</label>
-            <textarea id="comment" name="comment" rows="5" required></textarea>
+                <label for="comment">Your comment (required)</label>
+                <textarea id="comment" name="comment" rows="5" required></textarea>
 
-            <input type="submit" value="SEND">
+                <input type="submit" value="SEND">
 
-            <div id="errorMessages"></div>
-        </form>
+                <div id="errorMessages"></div>
+            </form>
+        </div>
+        
+        
+        
     
         <h3>Contact Method Description</h3>
         <table class="contact-table">
@@ -86,6 +84,6 @@
     <footer>
         <p id="copyYear">© Andrew Xue. All rights reserved.</p>
     </footer>
-    
+    <script src="../static/contact.js"></script>
 </body>
 </html>
